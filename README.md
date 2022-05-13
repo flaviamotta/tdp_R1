@@ -1,2 +1,2 @@
 # tdp_R1
-Repository with codes for Technical report
+Repository with codes for technical report.

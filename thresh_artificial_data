@@ -95,6 +95,17 @@ wdnhea <- wd(nhea, filter.number = number_vm, family = family_choice)
 
 
 #Using the threshold approaches to denoise the data
+#BayesThresh arguments
+type_Bayesthreshold <- "soft" #"soft" or "hard"
+
+by_level_Bayesthreshold <- FALSE # F:global threshold computed.
+#V: a threshold is computed and applied separately to each scale level.
+
+#See Wavelet thresholding via Bayesian approach (1998) for details on specifying 
+#hyperparameters.
+alpha_Bayesthreshold <- 0.5 
+beta_Bayesthreshold <- 1
+
 
 #Doppler
 thrwdndopun <- threshold(wdndop,levels= 3:(nlevelsWT(wdndop)-1),
